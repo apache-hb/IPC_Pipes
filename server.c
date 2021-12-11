@@ -96,7 +96,7 @@ int main( int argc, char *argv[] )
     struct data input; //Struct for input
 
     //Opening the second FIFO    
-    if( (cd = open( CF, O_WRONLY|| O_NONBLOCK )) < 0 )
+    if( (cd = open( CF, O_WRONLY | O_NONBLOCK )) < 0 )
     { 
         perror( CF );
         exit( 1 ); 
